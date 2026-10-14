@@ -147,8 +147,32 @@ h2 {
 .proyek-grid {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   gap: 1.5rem;
 }
 
 .proyek-group {
-   
+   padding: 1.5rem;
+   background-color: var(--card-bg);
+   border-radius: 8px;
+   border: 1px solid var(--border-color);
+   border-top: 8px solid var(--primary-color);
+   gap: 0.8rem;
+}
+
+.proyek-group img {
+   max-width: 100px;
+}
+
+.proyek-group:hover {
+   border-top: 8px solid var(--accent-color);
+   transform: translateY(-4px);
+   box-shadow: 0 12px 20px var(--shadow-color);
+}
+
+footer {
+   text-align: center;
+   background-color: var(--card-bg);
+   border-top: 1px solid var(--border-color);
+   font-weight: 600;
+   padding: 1rem; 
 }
