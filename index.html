@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="assets/styles/style.css">
+   <script src="assets/script/script.js" defer></script>
+</head>
+<body>
+   <header>
+      <!-- Header -->
+      <nav class="navbar">
+         <div class="logo">Wilmar</div>
+         <ul class="nav-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+         </ul>
+         <button id="btn-tema" class="btn">Tema</button>
+      </nav>
+   </header>
+
+   <main>
+      <!-- Section hero/beranda -->
+      <section id="beranda" class="hero-section">
+         <img src="assets/image/FotoProfile.png" alt="profile">
+         <h1>Hi, my name is Fazl El Hakeem Wilmar</h1>
+         <p>Mahasiswa Teknik Universitas Riau</p>
+         <a href="#proyek" class="btn">Lihat Proyek</a>
+      </section>
+
+      <!-- Section tentang -->
+      <section id="tentang" class="tentang-section">
+         <h2>Tentang Saya</h2>
+         <div class="tentang-container">
+            <img src="assets/image/react.png" alt="foto tentang">
+            <div class="tentang-teks">
+               <p>Saya merupakan mahasiswa aktif program studi Teknik Informatika Universitas Riau</p>
+               <p id="teks-sembunyi" class="hidden">Alasan saya mengambil program studi ini adalah... (adalah pokoknya)</p>
+               <button id="btn-selengkapnya" class="btn">Selengkapnya</button>
+            </div>
+         </div>
+      </section>
+
+      <!-- Section proyek / keahlian -->
+      <section id="proyek" class="proyek-section">
+         <h2>Proyek / Keahlian</h2>
+         <div class="proyek-grid">
+            <article class="proyek-group">
+               <img src="assets/image/html.png" alt="HTML">
+               <h3>HTML</h3>
+               <p>Menguasai sintaks dasar HTML dan penerapannya dalam proyek dunia nyata</p>
+            </article>
+            <article class="proyek-group">
+               <img src="assets/image/css.png" alt="CSS">
+               <h3>CSS</h3>
+               <p>Memahami sintaks dasar CSS untuk membuat tampilan HTML menjadi lebih indah dan terstruktur</p>
+            </article>
+            <article class="proyek-group">
+               <img src="assets/image/javascript.png" alt="JS">
+               <h3>javascript</h3>
+               <p>Memahami sintaks dasar Javascript dalam membuat web yang dinamis dan responsif</p>
+            </article>
+         </div>
+      </section>
+
+      <!-- Section kontak -->
+      <section id="kontak" class="kontak-section">
+         <h2>Kontak</h2>
+         <form id="form-kontak">
+            <div class="form-container">
+               <div class="form-group">
+                  <label for="nama">Nama</label>
+                  <input type="text" name="nama" placeholder="Masukkan nama..." required>
+               </div>
+               <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" placeholder="Masukkan email..." required>
+               </div>
+               <div class="form-group">
+                  <label for="pesan">Pesan</label>
+                  <textarea name="pesan" id="pesan" rows="4" placeholder="Tuliskan pesan..."></textarea>
+               </div>
+            </div>
+         </form>
+      </section>
+   </main>
+
+   <footer>
+      <p>&copy; 2026 El Hakeem Wilmar | 082285187869</p>
+   </footer>
+</body>
+</html>
